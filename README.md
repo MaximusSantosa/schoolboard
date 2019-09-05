@@ -1,8 +1,10 @@
-# School Board Project
-Stanford Project 2018 - Connecting student with potential schools
+# SchoolBoard
+Stanford Pre-Collegiate Studies Web Technologies Program, 2018
+A website connecting prospective students to colleges around the world.
 
 ## Built With
 
+* HTML
 * NodeJS
 * MongoDB
 
@@ -10,11 +12,8 @@ Stanford Project 2018 - Connecting student with potential schools
 
 * **Joshua Hoffman** 
 * **Maximus Santosa** 
+* **Charles Ye**
 
 ## License
 
 This project is licensed under the MIT License 
-
-## Acknowledgments
-
-* Thank you to Joshua Hoffman 
