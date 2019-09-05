@@ -1,0 +1,22 @@
+{
+  "name": "schoolboard",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www"
+  },
+  "author": "Joshua Hoffman, Max Santosa, Charles Ye",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-encrypter": "^1.0.1",
+    "cookie-parser": "^1.4.3",
+    "cookies": "^0.7.1",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.1.2",
+    "kerberos": "~0.0.17",
+    "mongodb": "^2.2.36",
+    "morgan": "^1.9.1"
+  }
+}

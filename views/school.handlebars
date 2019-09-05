@@ -1,0 +1,41 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
+    <h1>
+        <a href="{{school.website}}" target="_blank" style="color: black;" name="School" id="School">{{school.name}}</a>
+    </h1>
+    <h3>{{school.location}}</h3>
+    <form action="/followschool" method="post" form="form">
+        <input type="text" name="School" value="{{school.name}}" hidden>
+        <input type="text" name="path" value="{{school.path}}" hidden>
+        <input type="submit" value="Follow" class="btn btn-primary mb-2">
+    </form>
+    <img style="width: 100%; height: 200px; object-fit: cover;" src="{{school.imgURL}}" alt="Stanford University">
+    <br>
+    <br>
+    <p>{{school.desc}}</p>
+    <hr>
+</div>
+<div class="container">
+    {{#each school.posts}}​
+        <div class="jumbotron">
+            <h3>{{this.title}}</h3> 
+            <a href="/ambassadors/{{this.username}}"><h4>{{this.author}}</h4></a>
+            <p>{{this.content}}</p>
+        </div>
+    {{/each}}
+</div>
+<div class="container">
+    <h3>Followers:</h3>
+    <ul>
+        {{#each school.followers}}
+            <li><a href="/students/{{this.name}}"><h6>{{this.name}}</h6></a></li>
+        {{/each}}
+    </ul>
+</div>

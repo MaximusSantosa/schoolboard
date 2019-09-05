@@ -1,0 +1,41 @@
+<div class="container mt-5 pl-4">
+    <h1 class="text-center">My
+        <span class="font-weight-bold">Student</span> Account</h1>
+    <br>
+    <h2>Schools</h2>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">School</th><th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each student.schoolsFollowing}}​
+            <tr>
+                <form action="/unfollowschool" method="post"><td scope="row"><a href="/school/{{this.path}}">{{this.name}}</a></td><td><input type="text" hidden value="{{this.name}}" name="SchoolFollowing"><input type="text" hidden value="{{../student.name}}" name="StudentName"><input type="submit" class="btn btn-danger btn-sm" value="Unfollow"></td></form>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <br>
+    <h2>Profile &amp; Settings</h2>
+    <form class="form" name="form" action="/updatestudent" method="post">
+        Name:
+        <input class="form-control" type="text" name="Name" value="{{student.name}}" id="name">
+        <br> Current year in High School:
+        <input class="form-control" name="HSYear" type="text" value="{{student.HSyear}}">
+        <br> High School:
+        <input class="form-control" type="text" name="HighSchool" value="{{student.HighSchool}}">
+        <br> Expected year of admission:
+        <input class="form-control" name="admissionYear" type="text" value="{{student.admissionYear}}">
+        <br> Email:
+        <input class="form-control" type="email" value="{{student.email}}" name="Email">
+        <br>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+    <br>
+    <br>
+    <form method="post" action="/logout">
+        <input class="btn btn-secondary" type="submit" value="Logout" name="logout">
+    </form>
+</div>
