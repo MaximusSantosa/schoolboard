@@ -1,6 +1,5 @@
 # SchoolBoard
-Stanford Pre-Collegiate Studies Web Technologies Program, 2018
-A website connecting prospective students to colleges around the world.
+Stanford Pre-Collegiate Studies Web Technologies Program, 2018. A website connecting prospective students to colleges around the world.
 
 ## Built With
 
