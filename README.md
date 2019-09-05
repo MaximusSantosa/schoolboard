@@ -1,4 +1,4 @@
-# schoolboard
+# School Board Project
 Stanford Project 2018 - Connecting student with potential schools
 
 ## Built With
